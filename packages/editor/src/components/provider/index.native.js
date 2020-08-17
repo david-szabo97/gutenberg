@@ -234,7 +234,6 @@ class NativeEditorProvider extends Component {
 	}
 
 	updateCapabilitiesAction( capabilities ) {
-		console.log( '---> Updated capabilites: ', capabilities );
 		this.props.updateSettings( capabilities );
 	}
 
@@ -246,7 +245,6 @@ class NativeEditorProvider extends Component {
 			...props
 		} = this.props;
 
-		console.log( '---> CAPABILITIES: ', capabilities );
 		this.props.updateSettings( capabilities );
 		return (
 			<EditorProvider post={ this.post } { ...props }>
